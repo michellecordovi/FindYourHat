@@ -14,3 +14,7 @@ Find Your Hat is a game built using Node.js that is played on your computers ter
 4. Start the game my inputing 'node main.js' into the terminal, this will prompt the start of the game.
 5. Input which direction you want to move (up, down, right, left), and the field will continue to print to the terminal with the path you've taken.
 6. The game ends when you've found your hat (win!) or when you fall down a hole (lose).
+
+
+### Example Game:
+![An example of the game being played in full](./game-screenshot.png)

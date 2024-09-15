@@ -11,11 +11,13 @@ class Field {
         this.field = field;
     }
 
+    ///prints field to the screen
     print(){
         // let stringField = this.field.map(index => index.join(''))
         this.field.forEach(index => console.log(index.join('')))
     }
 
+    //generates a custom field with width, height, and percentage of holes
     static generateField(width, height, percentage = 30){
         const newField = []
         const fieldDimensions = height * width;
