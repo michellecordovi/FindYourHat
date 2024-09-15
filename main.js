@@ -18,7 +18,7 @@ class Field {
     }
 
     //generates a custom field with width, height, and percentage of holes
-    static generateField(width, height, percentage = 30){
+    static generateField(width, height, percentage = 20){
         const newField = []
         const fieldDimensions = height * width;
         const numberOfHoles = fieldDimensions * (percentage/100)//number of holes in the field
@@ -163,7 +163,7 @@ function makeMove(userInput){
     }
 }
 
-const myField = new Field(Field.generateField(10, 5, 20))
+const myField = new Field(Field.generateField(10, 5))
 
 let row = myField.field.findIndex(element => element.includes("*")) //index of row where * starts in the field
 let column = myField.field[row].findIndex(element => element.includes("*"))
