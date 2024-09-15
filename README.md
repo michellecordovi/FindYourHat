@@ -18,3 +18,15 @@ Find Your Hat is a game built using Node.js that is played on your computers ter
 
 ### Example Game:
 ![An example of the game being played in full](./game-screenshot.png)
+
+
+## Modify Game 
+- If you'd like to change the dimensions of the field youre playing on, you can modify the 'myField' variable.
+
+```
+const myField = new Field(Field.generateField(10, 5, 20))
+```
+
+- 'new Field' declares a new field object, and as it's field parameter, you input the Field.generate function
+- Field.generate() takes 3 arguements: the width and height of the field (required parameters) and the percentage of the field that should be holes (default is set to 20).
+- Update the Field.generate() arguments to make the field bigger, smaller, or have a larger percentage of holes.
